@@ -1,9 +1,21 @@
-<div class="ql-editor-container">
-    <h1>Quill editor demo</h1>
-    <quill-editor [(ngModel)]="content" [config]="editorConfig" (ready)="onEditorCreated($event)" (change)="onContentChanged($event)">
-    </quill-editor>
+<div class="container">
+    <h2>Quill demo</h2>
+    <div class="editor-container">
+        <quill-editor [(ngModel)]="content" [config]="editorConfig" (ready)="onEditorCreated($event)" (change)="onContentChanged($event)"></quill-editor>
+    </div>
     <hr>
-    <div class="ql-editor" [innerHTML]="content"></div>
+    <div [innerHTML]="content"></div>
     <hr>
     <button (click)="onSave()">Save</button>
+</div>
+
+<div class="container">
+    <h2>Tinymce demo</h2>
+    <div class="editor-container">
+        <tinymce [elementId]="'my-editor-id'" (change)="onTinyContentChanged($event)"></tinymce>
+    </div>
+    <hr>
+    <div [innerHTML]="tinyContent"></div>
+    <hr>
+    <button (click)="onSaveTiny()">Save</button>
 </div>

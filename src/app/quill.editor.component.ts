@@ -59,11 +59,9 @@ export class QuillEditorComponent implements AfterViewInit, ControlValueAccessor
     };
 
     @Input() config: Object;
-
     @Output() ready: EventEmitter<any> = new EventEmitter();
     @Output() change: EventEmitter<any> = new EventEmitter();
 
-    // ...
     onModelChange: Function = () => { };
     onModelTouched: Function = () => { };
 

@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { QuillEditorComponent } from './quill.editor.component';
 import { AppComponent } from './app.component';
+import { TinymceComponent } from './tinymce.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuillEditorComponent
+    QuillEditorComponent,
+    TinymceComponent
   ],
   imports: [
     BrowserModule,

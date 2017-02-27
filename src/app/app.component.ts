@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   content = `<p>Hello World!</p><p>Some initial <strong>bold</strong> text</p><p><br></p>`;
   editorConfig = { placeholder: 'Text here!' };
+  tinyContent: string;
   constructor() { }
 
   onEditorCreated(quill) {
@@ -22,4 +23,14 @@ export class AppComponent {
     console.log(this.content);
   }
 
+
+  /* Tinymce */
+  onTinyContentChanged(e) {
+    console.log(e);
+    this.tinyContent = e;
+  }
+
+  onSaveTiny() {
+    console.log(this.tinyContent);
+  }
 }
