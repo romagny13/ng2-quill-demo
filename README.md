@@ -1,4 +1,4 @@
-# Quill edtitor component with Angular 2
+# Tinymce + quill components with Angular 2
 
 ## Usage
 
