@@ -1,0 +1,9 @@
+<div class="ql-editor-container">
+    <h1>Quill editor demo</h1>
+    <quill-editor [(ngModel)]="content" [config]="editorConfig" (ready)="onEditorCreated($event)" (change)="onContentChanged($event)">
+    </quill-editor>
+    <hr>
+    <div class="ql-editor" [innerHTML]="content"></div>
+    <hr>
+    <button (click)="onSave()">Save</button>
+</div>
