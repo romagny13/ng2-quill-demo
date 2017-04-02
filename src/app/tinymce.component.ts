@@ -10,7 +10,7 @@ import {
 declare let tinymce: any;
 
 @Component({
-    selector: 'tinymce',
+    selector: 'app-tinymce',
     template: `<textarea id="{{elementId}}"></textarea>`
 })
 export class TinymceComponent implements AfterViewInit, OnDestroy {

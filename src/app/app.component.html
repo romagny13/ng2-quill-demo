@@ -12,7 +12,7 @@
 <div class="container">
     <h2>Tinymce demo</h2>
     <div class="editor-container">
-        <tinymce [elementId]="'my-editor-id'" (change)="onTinyContentChanged($event)"></tinymce>
+        <app-tinymce [elementId]="'my-editor-id'" (change)="onTinyContentChanged($event)"></app-tinymce>
     </div>
     <hr>
     <div [innerHTML]="tinyContent"></div>
